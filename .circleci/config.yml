@@ -19,7 +19,8 @@ jobs:
       - checkout
       - node/install:
           lts: false 
-
+      - node/install-packages
+      
       # The next step will run the unit tests
       - android/run-tests:
           test-command: cd android && chmod +x ./gradlew && ./gradlew lint testDebug --continue
