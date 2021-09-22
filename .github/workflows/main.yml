@@ -2,7 +2,7 @@ name: react-native-android-build-apk
 on:
   pull_request:
           branches:
-                xd
+                dev
 
 jobs:
   install-and-test:
